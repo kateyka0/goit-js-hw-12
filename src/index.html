@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-11</title>
+    <title>goit-js-hw-12</title>
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <main>
       <form class="form" action>
         <input
-          class="input"
-          id="input"
-          name="userData"
-          type="search"
+          class="photo-search"
+          name="search"
+          type="text"
           placeholder="Search images..."
         />
-        <button class="btn" type="submit">Search</button>
+        <button class="form-button" type="submit">Search</button>
       </form>
 
-      <span class="loader"></span>
+      <span class="loader visually-hidden"></span>
 
-      <ul class="images-list"></ul>
+      <ul class="gallery"></ul>
+      <button class="load-btn visually-hidden" type="button">Load more</button>
     </main>
     <footer></footer>
     <script src="./main.js" type="module"></script>
