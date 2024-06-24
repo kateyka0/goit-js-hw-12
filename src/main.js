@@ -81,9 +81,8 @@ async function onLoadBtnClick() {
 function showMessage(message) {
     iziToast.show({
         message,
-        messageColor: 'white',
-        backgroundColor: '#EF4040',
-        iconUrl: imageUrl,
+        messageColor: '#050505',
+        backgroundColor: '#18DDFF',
         maxWidth: '360px',
         position: 'topRight',
         theme: 'dark',
@@ -100,7 +99,7 @@ function scroll() {
 }
 
 function updateBtnStatus() {
-  if (page >= maxPage) {
+    if (page >= maxPage) {
     hideElem(refs.loadBtn);
     hideElem(refs.loader);
     showMessage("We're sorry, but you've reached the end of search results.");
